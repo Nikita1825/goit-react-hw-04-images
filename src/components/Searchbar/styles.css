@@ -1,18 +1,3 @@
-/* bring in normalize.css styles */
-/* @import-normalize; */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 html {
   box-sizing: border-box;
   width: 100vw;
@@ -86,7 +71,7 @@ img {
   overflow: hidden;
 }
 
-.SearchFormbutton {
+.SearchForm-button {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -105,20 +90,27 @@ img {
   opacity: 1;
 }
 
-.SearchFormbuttonlabel {
-     color: #02f;
-    font-weight: 700;
+.SearchForm-button-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 }
 
-.SearchForminput {
- display: inline-block;
-    width: 100%;
-    font: inherit;
-    font-size: 15px;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-    padding-right: 4px;
+.SearchForm-input {
+  display: inline-block;
+  width: 100%;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .SearchForm-input::placeholder {
@@ -212,9 +204,4 @@ img {
 .Button:hover,
 .Button:focus {
   background-color: #303f9f;
-}
-.Load-more-wrap{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
 }
